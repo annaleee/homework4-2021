@@ -31,7 +31,7 @@ body{
 
   /*Req 1*/
   background: #DDDDDD url('../images/pigeon-background.JPEG') no-repeat center center;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   font-family: 'Andika', sans-serif;
 }
@@ -134,7 +134,7 @@ tbody tr td{
   border-top: 2px solid #000000;
 }
 
-thead tr th{
+thead tr:not(:hover) th{
     min-width: 125px;
     padding: 10px;
     color: #FFFFFF;
@@ -142,6 +142,15 @@ thead tr th{
     vertical-align: middle;
     background-color: #7e0825;
     text-transform: uppercase;
+}
+thead tr:hover th{
+  min-width: 125px;
+  padding: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(126,8,37,0.25);
+  text-transform: uppercase;
 }
 
 tbody tr th{
