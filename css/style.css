@@ -1,0 +1,168 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+Make sure to learn what the starter code does!!
+*/
+
+/*STARTER CODE - DO NOT CHANGE*/
+main{
+  margin-bottom: 100px;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+/* If you decide to uncomment this code, comment it back for the Autograder. */
+/* tr{
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+} */
+
+/*END STARTER CODE*/
+
+body{
+  color: #000000;
+  font-size: 16px;
+  margin: 1.2em;
+  background-position: center;
+
+  /*Req 1*/
+  background: #DDDDDD url('../images/pigeon-background.JPEG') no-repeat center;
+  background-size: 100%;
+  font-family: 'Andika', sans-serif;
+}
+
+h1{
+  color: #c12258;
+  font-size: 2em;
+
+  /*Req 2*/
+  font-size:32px;
+  text-align: center;
+  line-height: 2;
+
+}
+
+p{
+  padding-top: 15px;
+}
+
+a{
+  font-size: 6px;
+  color: #B21F50;
+  text-decoration: wavy underline;
+}
+
+/*Req 5*/
+/*Add selector and rule here*/
+:focus{
+  border-color: #417243;
+  border-style: dashed;
+  border-width: 3px;
+}
+
+
+td{
+  
+}
+
+
+.colhead{
+  color: #FFFFFF;
+
+}
+
+.rowhead{
+
+}
+
+
+table{
+    margin: 0px auto;
+}
+
+/* I gave you the selector, but not the property-value pair. 
+You can use Inspect Element or your editor to find selectors. */
+thead tr th:first-child,
+thead tr td:first-child{
+    border-left: 5px solid #000000;     /* 给table设置左边框 */
+}
+table tr th:first-child,
+table tr td:first-child{
+    border-left: 5px solid #000000;     /* 给table设置左边框 */
+}
+thead tr th:last-child,
+thead tr td:last-child{
+    border-right: 5px solid #000000;     /* 给table设置右边框 */
+}
+table tr th:last-child,
+table tr td:last-child{
+    border-right: 5px solid #000000;     /* 给table设置右边框 */
+}
+thead tr th{
+    border-top: 5px solid #000000;     /* 给table设置上边框 */
+}
+tbody tr:last-child th,
+tbody tr:last-child td{
+    border-bottom: 5px solid #000000;     /* 给table设置下边框 */
+}
+thead tr:first-child th:first-child{
+    border-top-left-radius: 50px;     /* 设置table左上圆角 */
+}
+thead tr:first-child th:last-child{
+    border-top-right-radius: 50px;     /* 设置table右上圆角 */
+}
+tbody tr:last-child th:first-child{
+    border-bottom-left-radius: 50px; /* 设置table左下圆角 */
+}
+table tr:last-child td:last-child{
+    border-bottom-right-radius: 50px;/* 设置table右下圆角 */
+}
+
+
+tbody tr th,
+tbody tr td{
+  padding: 10px;
+  text-align: center;
+  border-top: 2px solid #000000;
+}
+
+thead tr th{
+    min-width: 125px;
+    padding: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #7e0825;
+    text-transform: uppercase;
+}
+
+tbody tr th{
+  border-right: 2px solid #000000;
+
+}
+tbody tr:nth-child(even) td,
+tbody tr:nth-child(even) th{
+    background-color: #D1D1D1;
+}
+
+tr:hover{
+  background-color: rgba(209,209,209,0.25);
+}
+/*Add selectors and rules here*/
+
+
+
+footer{
+  width:100%;
+  background:#000000;
+  text-align:center;
+  color: #FFFFFF;
+  min-height: 75px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
