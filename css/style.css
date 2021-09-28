@@ -30,7 +30,7 @@ body{
   margin: 1.2em;
 
   /*Req 1*/
-  background: #DDDDDD url('../images/pigeon-background.JPEG') no-repeat center;
+  background: #DDDDDD url('../images/pigeon-background.JPEG') no-repeat center center;
   background-size: 100%;
   background-position: center;
   font-family: 'Andika', sans-serif;
@@ -124,12 +124,13 @@ table tr:last-child td:last-child{
     border-bottom-right-radius: 50px;/* 设置table右下圆角 */
 }
 
-
+tr:hover{
+  background-color: rgba(126,8,37,0.25);
+}
 tbody tr th,
 tbody tr td{
   padding: 10px;
   text-align: center;
-  vertical-align: middle;
   border-top: 2px solid #000000;
 }
 
@@ -138,6 +139,7 @@ thead tr th{
     padding: 10px;
     color: #FFFFFF;
     text-align: center;
+    vertical-align: middle;
     background-color: #7e0825;
     text-transform: uppercase;
 }
@@ -146,14 +148,12 @@ tbody tr th{
   border-right: 2px solid #000000;
 
 }
-tbody tr:nth-child(even) td,
-tbody tr:nth-child(even) th{
+tbody tr:nth-child(even):not(:hover) td,
+tbody tr:nth-child(even):not(:hover) th{
     background-color: #D1D1D1;
 }
 
-tr:hover{
-  background-color: rgba(126,8,37,0.25);
-}
+
 /*Add selectors and rules here*/
 
 
@@ -166,5 +166,6 @@ footer{
   color: #FFFFFF;
   min-height: 75px;
   bottom: 0;
+  left: 0;
   
 }
