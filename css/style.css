@@ -124,9 +124,7 @@ table tr:last-child td:last-child{
     border-bottom-right-radius: 50px;/* 设置table右下圆角 */
 }
 
-tr:hover{
-  background-color: rgba(126,8,37,0.25);
-}
+
 tbody tr th,
 tbody tr td{
   padding: 10px;
@@ -134,7 +132,7 @@ tbody tr td{
   border-top: 2px solid #000000;
 }
 
-thead tr:not(:hover) th{
+thead tr th{
     min-width: 125px;
     padding: 10px;
     color: #FFFFFF;
@@ -143,29 +141,22 @@ thead tr:not(:hover) th{
     background-color: #7e0825;
     text-transform: uppercase;
 }
-thead tr:hover th{
-  min-width: 125px;
-  padding: 10px;
-  color: #FFFFFF;
-  text-align: center;
-  vertical-align: middle;
-  background-color: rgba(126,8,37,0.25);
-  text-transform: uppercase;
-}
 
 tbody tr th{
   border-right: 2px solid #000000;
 
 }
-tbody tr:nth-child(even):not(:hover) td,
-tbody tr:nth-child(even):not(:hover) th{
-    background-color: #D1D1D1;
-}
-tbody tr:nth-child(odd):not(:hover) td,
-tbody tr:nth-child(odd):not(:hover) th{
-  background-color: transparent;
+
+tr:nth-child(even){
+    background: #D1D1D1;
 }
 
+tr:nth-child(odd){
+  background: transparent;
+}
+tr:hover{
+  background-color: rgb(126,8,37,0.25);
+}
 /*Add selectors and rules here*/
 
 
