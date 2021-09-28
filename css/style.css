@@ -161,7 +161,9 @@ tbody tr:nth-child(even):not(:hover) td,
 tbody tr:nth-child(even):not(:hover) th{
     background-color: #D1D1D1;
 }
-
+tbody tr:nth-child(odd):not(:hover) th{
+  background-color: transparent;
+}
 
 /*Add selectors and rules here*/
 
